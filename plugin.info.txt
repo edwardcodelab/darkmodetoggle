@@ -1,0 +1,7 @@
+base   darkmodetoggle
+author dodotori @dokuwiki forum
+email  dodotori@localhost
+date   2025-02-27
+name   Dark Mode Toggle
+desc   Add a dark mode toggle button in dokuwiki page
+url    https://github.com/

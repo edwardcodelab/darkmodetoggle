@@ -1,0 +1,113 @@
+/* Button styling (light mode, Bootstrap-friendly) */
+.darkmode-btn {
+    padding: 4px 4px; /* Matches Bootstrap btn padding */
+    background-color: #f5f5f5; /* Bootstrap light gray */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    display: inline-block; /* Ensures button behaves like Bootstrap */
+    text-align: center;
+}
+
+.darkmode-btn:hover {
+    background-color: #e6e6e6; /* Bootstrap hover effect */
+    text-decoration: none; /* Prevent underline on hover */
+}
+
+/* Dark mode button styling */
+body.dark-mode .darkmode-btn {
+    background-color: #444 !important;
+    color: #fff !important;
+    border-color: #666 !important;
+}
+
+body.dark-mode .darkmode-btn:hover {
+    background-color: #555 !important;
+}
+
+/* Dark mode core styles */
+body.dark-mode {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+}
+
+/* Bootstrap3 template-specific elements */
+body.dark-mode #dokuwiki__site,
+body.dark-mode #dokuwiki__header,
+body.dark-mode #dokuwiki__content,
+body.dark-mode #dokuwiki__footer {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode article {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+}
+
+/* Bootstrap container and layout */
+body.dark-mode .container,
+body.dark-mode .container-fluid {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .row,
+body.dark-mode [class*="col-"] {
+    background-color: transparent !important; /* Avoid over-darkening nested elements */
+    color: #ffffff !important;
+}
+
+/* Links and text */
+body.dark-mode a,
+body.dark-mode #dokuwiki__content a,
+body.dark-mode article a {
+    color: #66b3ff !important;
+}
+
+body.dark-mode a:hover,
+body.dark-mode #dokuwiki__content a:hover,
+body.dark-mode article a:hover {
+    color: #99c9ff !important; /* Lighter blue on hover */
+}
+
+/* Common text elements */
+body.dark-mode div,
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #ffffff !important;
+}
+
+/* Additional Bootstrap3 elements */
+body.dark-mode .navbar,
+body.dark-mode .navbar-default {
+    background-color: #2d2d2d !important;
+    border-color: #444 !important;
+}
+
+body.dark-mode .navbar-default .navbar-nav > li > a {
+    color: #ffffff !important;
+}
+
+body.dark-mode .navbar-default .navbar-nav > li > a:hover {
+    color: #66b3ff !important;
+}
+
+body.dark-mode .panel,
+body.dark-mode .panel-default {
+    background-color: #2d2d2d !important;
+    border-color: #444 !important;
+}
+
+body.dark-mode .panel-default > .panel-heading {
+    background-color: #444 !important;
+    color: #ffffff !important;
+    border-color: #555 !important;
+}
