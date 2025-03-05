@@ -67,3 +67,46 @@ body.dark-mode td {
     color: #ffffff !important;
     border-color: #444 !important;
 }
+
+
+
+/* Fix Indexmenu plugin node font color in dark mode */
+body.dark-mode .indexmenu ul li a,
+body.dark-mode .indexmenu .tree li a,
+body.dark-mode #index__tree a {
+    color: #ffffff !important; /* White text for readability */
+}
+
+body.dark-mode .indexmenu ul li a:hover,
+body.dark-mode .indexmenu .tree li a:hover,
+body.dark-mode #index__tree a:hover {
+    color: #66b3ff !important; /* Light blue on hover, consistent with other links */
+}
+
+/* Fix editor textarea in dark mode */
+body.dark-mode textarea.edit,
+body.dark-mode #wiki__editbar textarea,
+body.dark-mode #wiki__text,
+body.dark-mode .CodeMirror,
+body.dark-mode .CodeMirror pre {
+    background-color: #2d2d2d !important; /* Dark background */
+    color: #ffffff !important; /* White text */
+    border-color: #444 !important; /* Darker border */
+}
+
+/* Ensure editor buttons and surrounding elements adapt */
+body.dark-mode #wiki__editbar,
+body.dark-mode .editButtons {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+}
+
+/* Fix CodeMirror-specific elements (if using a syntax-highlighting plugin) */
+body.dark-mode .CodeMirror-gutters {
+    background-color: #2d2d2d !important;
+    border-right: 1px solid #444 !important;
+}
+
+body.dark-mode .CodeMirror-linenumber {
+    color: #ffffff !important;
+}
